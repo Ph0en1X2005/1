@@ -42,24 +42,9 @@
 Ход работы:
 - Изучить игру и выбрать одну из игровых переменных (в моём случае здоровье), описать её роль, а также построить схему экономической модели и указать место игровой валюты в ней.
 ```py
+Роль в игре:
+![image](https://github.com/user-attachments/assets/9d957a02-ed5a-4dc9-89cf-9de8d3d35510)
 
-In [ ]:
-#Import the required modules, numpy for calculation, and Matplotlib for drawing
-import numpy as np
-import matplotlib.pyplot as plt
-#This code is for jupyter Notebook only
-%matplotlib inline
-
-# define data, and change list to array
-x = [3,21,22,34,54,34,55,67,89,99]
-x = np.array(x)
-y = [2,22,24,65,79,82,55,130,150,199]
-y = np.array(y)
-
-#Show the effect of a scatter plot
-plt.scatter(x,y)
-
-```
 
 - Определите связанные функции. Функция модели: определяет модель линейной регрессии wx+b. Функция потерь: функция потерь среднеквадратичной ошибки. Функция оптимизации: метод градиентного спуска для нахождения частных производных w и b.
 
