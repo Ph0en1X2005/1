@@ -67,23 +67,21 @@
 
 ```py
 
-import ScriptEnv
-ScriptEnv.Initialize("Ansoft.ElectronicsDesktop")
-oDesktop.RestoreWindow()
-oProject = oDesktop.NewProject()
-oProject.Rename("C:/Users/denisov.dv/Documents/Ansoft/SphereDIffraction.aedt", True)
-oProject.InsertDesign("HFSS", "HFSSDesign1", "HFSS Terminal Network", "")
-oDesign = oProject.SetActiveDesign("HFSSDesign1")
-oEditor = oDesign.SetActiveEditor("3D Modeler")
-oEditor.CreateSphere(
-	[
-		"NAME:SphereParameters",
-		"XCenter:="		, "0mm",
-		"YCenter:="		, "0mm",
-		"ZCenter:="		, "0mm",
-		"Radius:="		, "1.0770329614269mm"
-	], 
-)
+import gspread
+import numpy as np
+gc = gspread.service_account(filename='unitydatascience-445815-2e2f93084ac3.json')
+sh = gc.open("UnityWorkshop2")
+minutes = list(range(1,15))
+i = 0
+while i <= len(minutes):
+    i += 1
+    if i == 0:
+        continue
+    else:
+        current_hp = np.random.randint(0, 50)
+        sh.sheet1.update(('A' + str(i)), str(i))
+        sh.sheet1.update(('B' + str(i)), str(current_hp))
+        print(current_hp)
 
 ```
 
