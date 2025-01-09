@@ -84,8 +84,11 @@ while i <= len(mon):
         sh.sheet1.update(('B' + str(i)), str(current_hp))
         print(current_hp)
 
+Ссылка на таблицу: https://docs.google.com/spreadsheets/d/1LCCSt8XJDh_7gs_vaJR059MQgLTXUn3xa8T4tR-FFkM/edit?gid=0#gid=0
+
 
 ```
+
 
 ## Задание 3
 ### Настройте на сцене Unity воспроизведение звуковых файлов, описывающих динамику изменения выбранной переменной. Например, если выбрано здоровье главного персонажа вы можете выводить сообщения, связанные с его состоянием.
