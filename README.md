@@ -56,7 +56,8 @@
 
 
 Схема экономической модели в игре:
-![Screenshot_1](https://github.com/user-attachments/assets/4d755785-6add-41b0-a07c-6a04e6cd1370)
+![Screenshot_1](https://github.com/user-attachments/assets/cb654c86-168f-4bd9-8651-50bc77bd4ddc)
+
 
 
 
